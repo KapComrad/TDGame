@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://ConveyorBuilder.cs" type="Script" id=1]
+[ext_resource path="res://Spawner.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Stone.tscn" type="PackedScene" id=3]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="ConveyorBuilder" type="Node2D" parent="."]
+z_index = -1
+script = ExtResource( 1 )
+
+[node name="Spawner" parent="." instance=ExtResource( 2 )]
+position = Vector2( 224, 160 )
+
+[node name="Stone" parent="." instance=ExtResource( 3 )]
+position = Vector2( 384, 144 )
+
+[node name="Stone2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 368, 168 )
+
+[node name="Stone4" parent="." instance=ExtResource( 3 )]
+position = Vector2( 368, 144 )
+
+[node name="Stone5" parent="." instance=ExtResource( 3 )]
+position = Vector2( 352, 184 )
+
+[node name="Stone6" parent="." instance=ExtResource( 3 )]
+position = Vector2( 368, 192 )
+
+[node name="Stone7" parent="." instance=ExtResource( 3 )]
+position = Vector2( 384, 186 )
+
+[node name="Stone3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 352, 150 )
